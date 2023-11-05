@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+img{
+    max-width:100%;
+}
+
+body{
+    color: #5D4033;
+    font-family: 'Times New Roman';
+}
+
+header{
+    background-color: #F5C3B4;
+    /* position: fixed; */
+}
+
+.index h1{
+    padding: 1em 0 0 4.5em;
+}
+
+header img{
+    /* position:fixed; */
+    max-height: 5em;
+    display: block;
+    margin: auto;
+}
+
+main{
+    background-color: #678062;
+    padding-bottom: 3em;
+}
+
+.index img{
+    padding: 1em;
+    animation: rotation 10s linear infinite;
+}
+    
+@keyframes rotation{
+    from{
+      transform: rotate(0deg)
+    }
+    to{
+      transform: rotate(360deg)
+    } 
+} 
+
+.index a{
+    text-decoration: none; 
+    display: flex;
+    color: #5D4033;
+    /* padding: 1em 1em 1em 3em; */
+    background-color:#F5C3B4;
+    border-radius: 0.5em;
+    width: 10em;
+    margin: auto;
+    margin-bottom: 1em;
+    transition: all 300ms ease;
+}
+
+.index a:first-of-type{
+    margin-top: 1em;
+    padding: 1em 1em 1em 2.5em;
+}
+
+.index a:nth-of-type(2),
+.index a:nth-of-type(3){
+    padding: 1em 1em 1em 3em;
+}
+
+.index a:hover{
+    border: 0.3em solid #8AC980;
+    color:#5D4033;
+    background-color: #B9E5F5;
+}
+
+footer{
+    background-color: #A4B99A;
+    padding-bottom: 5em;
+}
+
+.index h2, footer h2{
+    padding: 1em 0 0.5em 4.5em;
+    font-size: large;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+input{
+    display: table-cell;
+    margin-bottom: 7px;
+}
+
+ input{
+    padding: 0.3em;
+    border-radius: 0.5em;
+    width: 12em;
+    background-color:#FDDCCF;
+    color: grey;
+    font-family: 'Times New Roman';
+}
+
+ button{
+    font-family: 'Times New Roman';
+    background-color:#B9E5F5;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transition: all 300ms ease;
+    
+ }
+
+ button:hover{
+    border: 0.3em solid #8AC980;
+    background: #678062;
+    color: white;
+}
+
+nav{
+    position: fixed;
+    margin-top: 32.5em;
+    background-color: #5B6858;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    z-index: 1;
+    /* the element with a z-index of 1 will be in 
+    front of the element with a z-index of 0 */
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none; 
+    padding: 0.5em 1em 0.5em 1.5em;
+    flex-direction: space-between;
+}
+  
+nav ul li a{
+    text-decoration: none;
+}
+
+nav img{
+    padding: 0 1em;
+}
+
+/* health html and locations html*/
+
+.healthpage, .restaurant, .restaurant figcaption a{
+    color: #E6DBCF;
+}
+
+h2 strong, button{
+    color: #5D4033;
+}
+
+.healthpage h1{
+    padding: 1em 0 0 2.7em;
+}
+
+.healthpage h2{
+    padding: 1em 0 0 0.5em;
+}
+
+.healthpage p, .locations p, .locations img{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.healthpage section:first-of-type p,
+.healthpage section:nth-of-type(3) p{
+    padding: 0 8em 0.5em 1em;
+}
+
+.healthpage img{
+    width: 7em;
+}
+
+.healthpage img:first-of-type{
+    position: absolute;
+    margin: 5em 0 0 15.5em
+}
+
+.healthpage img:nth-of-type(2){
+    position: absolute;
+    margin: 3em 0 0 15.5em
+}
+
+form img{
+    width: 4em;
+    position: absolute;
+    margin: 0.2em 0 0 15em;
+}
+
+@font-face { 
+    font-family: 'LuminariRegular';
+    src: url('../font/Luminari-Regular.ttf')
+}
+
+h1{
+    font-family: 'LuminariRegular';
+    color: #F5C3B4;
+}
+
+/* .healthpage section:nth-of-type(2),
+.healthpage section:nth-of-type(4){
+    background-color: #F5C3B4;
+    color: #5D4033;
+    padding-bottom: 2em;
+}
+
+.healthpage section:first-of-type,
+.healthpage section:nth-of-type(3){
+    padding-bottom: 2em;
+}
+
+.healthpage{
+    padding-bottom: 0;
+} */
+
+.healthpage section:nth-of-type(2){
+    border-radius: 1em;
+    background-color: #F5C3B4;
+    color: #5D4033;
+    padding-bottom: 1em;
+    margin: 0 1em;
+}
+
+/* favorites html */
+.restaurant h1{
+    padding: 1em 0 0.5em 1.3em;
+}
+
+.restaurant h2, figcaption, .restaurant p, 
+.locations h1, .locations h2, .locations p{
+    text-align: center;
+}
+
+.restaurant p{
+    margin: 1em;
+    color: #FDDCCF
+}
+
+.restaurant img:first-of-type{
+    width: 15em;
+    margin: 0.5em 0 0 4em;
+}
+
+figcaption a{
+    font-size: small;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+figcaption a:hover{
+    color: #5D4033;
+    background-color: #FDDCCF;
+    border-radius: 0.3em;
+    padding: 0 0.3em;
+}
+
+figcaption a:visited{
+    color:#5D4033;
+}
+
+/* .restaurant section:first-of-type a:nth-of-type(2), 
+.restaurant section:nth-of-type(2) a:nth-of-type(2){ */
+
+/* strong{
+    text-decoration: none; 
+    padding-left: 7.7em;
+    color:#5D4033;
+    background-color: #FDDCCF;
+    border-radius: 0.5em;
+} */
+
+.restaurant section:first-of-type p:last-of-type a,
+.restaurant section:last-of-type p:last-of-type a{
+    text-decoration: none;
+    color: #5D4033;
+    background-color: #F5C3B4;
+    border-radius: 0.5em;
+    padding: 0.3em;
+}
+
+.restaurant section:first-of-type p:last-of-type a{
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+.restaurant section:first-of-type p:last-of-type a:hover,
+.restaurant section:last-of-type p:last-of-type a:hover{
+    border: 0.3em solid #8AC980;
+    color:#5D4033;
+    background-color: #B9E5F5;
+}
+
+.utencils{
+    width: 3em;
+}
+
+
+/* locations html */
+.locations h1{
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+
+.locations h2{
+    padding-top: 1.5em;
+}
+
+.locations section{
+    border-radius: 1em;
+    background-color: #F5C3B4;
+    color: #5D4033;
+    padding-bottom: 1em;
+    margin: 3em 1.5em 5em 1.5em;
+}
+
+.locations section p:last-of-type a{
+    text-decoration: none;
+    color: #5D4033;
+    background-color: #B9E5F5;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    transition: all 200ms ease;
+}
+
+.locations section p:last-of-type a:hover{
+    color: white;
+    background-color: #A4B99A;
+    border-radius: 0.3em;
+}
+
+.locations figcaption a{
+    color: #5D4033
+}
+
+.locations p{
+    margin: 1em;
+}
+
+.plant{
+    position: absolute;
+    width: 9em;
+    margin-left: 13em;
+    margin-top: 14.5em
+}
